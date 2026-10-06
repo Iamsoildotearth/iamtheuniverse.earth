@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Global Gallery · I Am the Universe Experience CIC</title>
+<meta name="description" content="I Am the Universe Experience CIC explores our connection with soil, nature and the living Earth through creativity, education and community participation.">
+<style>
+:root{--dg:#223a2c;--gold:#c9a24f;--cream:#f3efe4;--ink:#223a2c;--beige:#e6ddcb;--deep:#18261d}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Georgia,'Times New Roman',serif;color:var(--ink);background:var(--cream);line-height:1.6}
+.w{max-width:940px;margin:0 auto;padding:0 24px}
+.label{font:bold 11px/1 Arial,Helvetica,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin:0 0 14px}
+h1,h2{font-weight:normal;line-height:1.1;margin:0 0 18px}
+h2{font-size:clamp(30px,5vw,42px)}
+.btn{display:inline-block;background:var(--gold);color:#1a1a1a;font:bold 13px Arial,Helvetica,sans-serif;padding:13px 26px;border-radius:30px;text-decoration:none}
+nav{background:var(--dg);color:#fff;font:12px Arial,Helvetica,sans-serif;position:sticky;top:0;z-index:5}
+nav .w{display:flex;justify-content:space-between;align-items:center;height:44px}
+nav a{color:#fff;text-decoration:none;margin-left:20px}
+nav b{font-size:12px}
+.hero{background:#000;color:#fff;text-align:center;padding:70px 0 90px;overflow:hidden}
+.ring{width:min(600px,92vw);margin:0 auto;padding:40px 20px 30px;border:1px solid #1c1c1c;border-radius:50%;box-shadow:0 0 0 40px #050505,0 0 0 41px #111}
+.star{color:var(--gold);font-size:34px;line-height:1}
+.hero h1{font-size:clamp(44px,10vw,74px);margin:10px 0 18px}
+.hero p{max-width:440px;margin:0 auto 26px;color:#e6e6e6;font-size:16px}
+.intro{padding:56px 0 64px}
+.intro h2{max-width:560px}
+.intro .sub{max-width:460px;font-size:15px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:34px}
+.card{background:#fffdf7;border-top:3px solid var(--gold);padding:22px;box-shadow:0 2px 8px rgba(0,0,0,.08);font-size:14px}
+.card h3{font-weight:normal;font-size:18px;margin:0 0 10px}
+.card p{margin:0}
+.story{background:var(--dg);color:#fff;padding:64px 0}
+.story .w{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center}
+.story p{font-size:14px;color:#e8eee9;max-width:430px}
+.story b{color:#fff}
+.orb{aspect-ratio:1;max-width:340px;width:100%;margin:0 auto;border-radius:50%;background:radial-gradient(circle,#c9a24f 0 9%,#5b7a58 9% 30%,#3d5c45 30% 55%,#2d4a37 55%);box-shadow:0 14px 30px rgba(0,0,0,.4);display:flex;align-items:center;justify-content:center;text-align:center;padding:20%;font-size:17px}
+.vision{padding:64px 0;text-align:center}
+.vision h2{text-align:left}
+.vision blockquote{font-style:italic;font-size:22px;max-width:620px;margin:22px auto}
+.vision p{font-size:13px;max-width:640px;margin:0 auto}
+.connect{background:var(--beige);text-align:center;padding:64px 0}
+.connect p{max-width:520px;margin:0 auto 24px;font-size:15px}
+.connect .btn{margin:4px}
+.connect .alt{background:none;border:2px solid var(--gold);color:var(--ink)}
+footer{background:var(--deep);color:#cfd8d1;font:12px/1.7 Arial,Helvetica,sans-serif;padding:32px 0}
+footer a{color:var(--gold)}
+footer i{display:block;margin-top:14px;opacity:.7}
+@media(max-width:720px){.story .w{grid-template-columns:1fr}nav a{margin-left:12px}}
+.top{background:var(--dg);color:#fff;text-align:center;padding:56px 0 48px}
+.top p{max-width:560px;margin:0 auto;color:#e8eee9;font-size:15px}
+.gal{padding:48px 0;min-height:300px}
+.gg{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:18px}
+.gg figure{margin:0;background:#fffdf7;border-top:3px solid var(--gold);box-shadow:0 2px 8px rgba(0,0,0,.08);cursor:pointer}
+.gg img{width:100%;aspect-ratio:1;object-fit:cover;display:block}
+.gg figcaption{padding:10px 12px;font-size:13px}
+.empty{text-align:center;font-size:17px;max-width:520px;margin:0 auto}
+.lb{display:none;position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:9;align-items:center;justify-content:center;padding:20px;cursor:pointer}
+.lb img{max-width:100%;max-height:100%}
+.note{font-size:12px;opacity:.8;margin-top:16px}
+</style>
+</head>
+<body>
+<nav><div class="w"><b>I Am the Universe</b><div><a href="index.html#about">About</a><a href="index.html#stories">I Am Soil Stories</a><a href="gallery.html">Global Gallery</a><a href="index.html#connect">Connect</a></div></div></nav>
+<header class="top"><div class="w">
+<p class="label">I Am Soil Stories</p>
+<h1 style="font-size:clamp(36px,8vw,56px)">The Global Gallery</h1>
+<p>Words, drawings, paintings and creations from people who have imagined the world from the perspective of soil.</p>
+</div></header>
+<section class="gal"><div class="w">
+<div class="gg" id="gg"></div>
+<p class="empty" id="empty" style="display:none">The gallery is waiting for its first stories. Yours could be the first.</p>
+</div></section>
+<section class="connect"><div class="w">
+<p class="label">Add your story</p>
+<h2>Share your I Am Soil Story</h2>
+<p>Took part in a workshop or imagined your own journey into the soil? Send us a photo of your drawing or painting along with a first name and a few words about it.</p>
+<a class="btn" href="mailto:workshops@iamtheuniverse.earth?subject=My%20I%20Am%20Soil%20Story">Send your story</a>
+<p class="note">We only publish with permission. For under 18s we need a parent or guardian to agree.</p>
+</div></section>
+<div class="lb" id="lb"><img id="lbi" alt=""></div>
+<footer><div class="w"><b>I Am the Universe Experience CIC</b><br>Connecting people, soil, nature and the living Earth.<br><br><a href="index.html">Back to home</a><i>© Cheryl Butterworth 2026. All rights reserved. Artwork remains the property of its creators.</i></div></footer>
+<script>
+var gg=document.getElementById('gg'),em=document.getElementById('empty'),lb=document.getElementById('lb'),lbi=document.getElementById('lbi');
+lb.onclick=function(){lb.style.display='none'};
+fetch('https://api.github.com/repos/Iamsoildotearth/iamtheuniverse.earth/contents/art?ref=main')
+.then(function(r){return r.ok?r.json():[]})
+.then(function(f){
+ var imgs=f.filter(function(x){return /\.(jpe?g|png|webp|gif)$/i.test(x.name)});
+ if(!imgs.length){em.style.display='block';return}
+ imgs.forEach(function(x){
+  var cap=x.name.replace(/\.[^.]+$/,'').replace(/[-_]+/g,' ');
+  var fg=document.createElement('figure');
+  fg.innerHTML='<img loading="lazy" src="art/'+encodeURIComponent(x.name)+'" alt="'+cap+'"><figcaption>'+cap+'</figcaption>';
+  fg.onclick=function(){lbi.src='art/'+encodeURIComponent(x.name);lbi.alt=cap;lb.style.display='flex'};
+  gg.appendChild(fg)});
+}).catch(function(){em.style.display='block'});
+</script>
+</body></html>
