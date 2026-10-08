@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
@@ -72,6 +73,14 @@ footer i{display:block;margin-top:14px;opacity:.7}
 .facts{font:bold 14px Arial,Helvetica,sans-serif;color:#8a6a1f;margin:6px 0 0}
 .em{font:14px Arial,Helvetica,sans-serif;margin-top:18px}
 .em a{color:var(--ink)}
+/* label fix: stop section paragraph rules from resizing the small headings */
+section p.label,header p.label{font:bold 11px/1 Arial,Helvetica,sans-serif;letter-spacing:.16em;margin:0 0 14px;max-width:none;color:#8a6a1f}
+.story p.label,.top p.label{color:var(--gold)}
+.vision p.label,.connect p.label,.top p.label{text-indent:.16em}
+.vision .w{text-align:center}
+.vision h2,.vision blockquote,.vision p{text-align:center;margin-left:auto;margin-right:auto}
+.vision h2{margin-bottom:18px}
+.vision blockquote{padding:0}
 </style>
 <script>function chk(){var s=document.querySelector('.strip');if(s&&!s.children.length)s.parentNode.parentNode.style.display='none'}</script>
 </head>
