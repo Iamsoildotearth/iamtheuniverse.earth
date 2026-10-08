@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
@@ -48,7 +50,13 @@ footer{background:var(--deep);color:#cfd8d1;font:12px/1.7 Arial,Helvetica,sans-s
 footer a{color:var(--gold)}
 footer i{display:block;margin-top:14px;opacity:.7}
 @media(max-width:720px){.story .w{grid-template-columns:1fr}nav a{margin-left:12px}}
+.hero{background:linear-gradient(rgba(0,0,0,.68),rgba(0,0,0,.68)),url(images/hero.jpg) center/cover no-repeat #000}
+.photos{padding:0 0 56px}
+.strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.strip figure{margin:0}
+.strip img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;border-radius:6px}
 </style>
+<script>function chk(){var s=document.querySelector('.strip');if(s&&!s.children.length)s.parentNode.parentNode.style.display='none'}</script>
 </head>
 <body>
 <nav><div class="w"><b>I Am the Universe</b><div><a href="#about">About</a><a href="#stories">I Am Soil Stories</a><a href="gallery.html">Global Gallery</a><a href="#connect">Connect</a></div></div></nav>
@@ -69,6 +77,8 @@ footer i{display:block;margin-top:14px;opacity:.7}
 <div class="card"><h3>Creativity</h3><p>We use imagination and creative expression to communicate ideas and experiences that can be difficult to convey through information alone.</p></div>
 <div class="card"><h3>Connection</h3><p>We create opportunities for people to explore their relationship with soil, nature and one another through shared experiences and storytelling.</p></div>
 </div></div></section>
+
+<section class="photos"><div class="w"><div class="strip"><figure><img src="images/home-1.jpg" alt="I Am the Universe community photo" loading="lazy" onerror="this.parentNode.remove();chk()"></figure><figure><img src="images/home-2.jpg" alt="I Am the Universe community photo" loading="lazy" onerror="this.parentNode.remove();chk()"></figure><figure><img src="images/home-3.jpg" alt="I Am the Universe community photo" loading="lazy" onerror="this.parentNode.remove();chk()"></figure></div></div></section>
 
 <section class="story" id="stories"><div class="w">
 <div>
