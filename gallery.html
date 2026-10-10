@@ -70,6 +70,14 @@ footer i{display:block;margin-top:14px;opacity:.7}
 .lb{display:none;position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:9;align-items:center;justify-content:center;padding:20px;cursor:pointer}
 .lb img{max-width:100%;max-height:100%}
 .note{font-size:12px;opacity:.8;margin-top:16px}
+.gg figure.tx{background:#fffdf7;padding-bottom:14px;cursor:pointer}
+.gg .tx figcaption{font-weight:bold;padding:14px 14px 6px}
+.gg .tx p{margin:0;padding:0 14px;font-size:14px;white-space:pre-wrap;color:#333}
+.rd{display:none;position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:9;overflow:auto;padding:30px 16px}
+.rdi{background:#fffdf7;color:#222;max-width:680px;margin:0 auto;padding:28px;border-radius:8px}
+.rdi h3{font-weight:normal;font-size:26px;margin:0 0 14px}
+.rdi div{white-space:pre-wrap;font-size:17px;line-height:1.7}
+.rdi .x{display:inline-block;margin-top:20px;background:var(--gold);padding:10px 22px;border-radius:30px;font:bold 13px Arial,sans-serif;cursor:pointer}
 </style>
 </head>
 <body>
@@ -92,27 +100,38 @@ footer i{display:block;margin-top:14px;opacity:.7}
 <p class="note">We only publish with permission. For under 18s we need a parent or guardian to agree.</p>
 </div></section>
 <div class="lb" id="lb"><img id="lbi" alt=""></div>
+<div class="rd" id="rd"><div class="rdi"><h3 id="rdt"></h3><div id="rdb"></div><span class="x">Close</span></div></div>
 <footer><div class="w"><b>I Am the Universe Experience CIC</b><br>Connecting people, soil, nature and the living Earth.<br>I Am the Universe Experience CIC is a Community Interest Company registered in England and Wales, company number 17394034.<br><br><a href="index.html">Back to home</a><br>Follow us on X: <a href="https://x.com/IamtheUniverse">@IamtheUniverse</a> &nbsp;·&nbsp; <a href="https://x.com/IAmSoilStories">@IAmSoilStories</a><i>© Cheryl Butterworth 2026. All rights reserved. Artwork remains the property of its creators.</i></div></footer>
 <script>
-var gg=document.getElementById('gg'),em=document.getElementById('empty'),lb=document.getElementById('lb'),lbi=document.getElementById('lbi');
+var gg=document.getElementById('gg'),em=document.getElementById('empty'),lb=document.getElementById('lb'),lbi=document.getElementById('lbi'),rd=document.getElementById('rd'),rdt=document.getElementById('rdt'),rdb=document.getElementById('rdb');
 lb.onclick=function(){lb.style.display='none'};
-fetch('https://api.github.com/repos/Iamsoildotearth/iamtheuniverse.earth/contents/art?ref=main')
-.then(function(r){return r.ok?r.json():[]})
-.then(function(f){
- var imgs=f.filter(function(x){return /\.(jpe?g|png|webp|gif|mp3|m4a|wav|ogg)$/i.test(x.name)});
- if(!imgs.length){em.style.display='block';return}
- imgs.forEach(function(x){
-  var cap=x.name.replace(/\.[^.]+$/,'').replace(/^\d+[-_ ]+/,'').replace(/[-_]+/g,' ');
-  var fg=document.createElement('figure');
-  var u='art/'+encodeURIComponent(x.name);
-  if(/\.(mp3|m4a|wav|ogg)$/i.test(x.name)){
-   fg.style.cursor='default';
-   fg.innerHTML='<div class="mu">&#9834;</div><figcaption>'+cap+'</figcaption><audio controls preload="none" src="'+u+'"></audio>';
-  }else{
-   fg.innerHTML='<img loading="lazy" src="'+u+'" alt="'+cap+'"><figcaption>'+cap+'</figcaption>';
-   fg.onclick=function(){lbi.src=u;lbi.alt=cap;lb.style.display='flex'};
-  }
-  gg.appendChild(fg)});
+rd.onclick=function(e){if(e.target===rd||e.target.className==='x'){rd.style.display='none'}};
+function cap(n){return n.replace(/\.[^.]+$/,'').replace(/^\d+[-_ ]+/,'').replace(/[-_]+/g,' ')}
+function add(n){
+ var c=cap(n),u='art/'+encodeURIComponent(n),f=document.createElement('figure'),t=document.createElement('figcaption');
+ t.textContent=c;
+ if(/\.(mp3|m4a|wav|ogg)$/i.test(n)){
+  var m=document.createElement('div');m.className='mu';m.innerHTML='&#9834;';
+  var a=document.createElement('audio');a.controls=true;a.preload='none';a.src=u;
+  f.style.cursor='default';f.appendChild(m);f.appendChild(t);f.appendChild(a);
+ }else if(/\.(txt|md)$/i.test(n)){
+  f.className='tx';var p=document.createElement('p');p.textContent='Loading...';
+  f.appendChild(t);f.appendChild(p);
+  fetch(u).then(function(r){return r.text()}).then(function(x){
+   p.textContent=x.length>260?x.slice(0,260).trim()+'...':x;
+   f.onclick=function(){rdt.textContent=c;rdb.textContent=x;rd.style.display='block'};
+  }).catch(function(){f.remove()});
+ }else{
+  var i=document.createElement('img');i.loading='lazy';i.src=u;i.alt=c;
+  f.onclick=function(){lbi.src=u;lbi.alt=c;lb.style.display='flex'};
+  f.appendChild(i);f.appendChild(t);
+ }
+ gg.appendChild(f);
+}
+fetch('art/list.txt',{cache:'no-cache'}).then(function(r){return r.ok?r.text():''}).then(function(t){
+ var names=t.split(/\r?\n/).map(function(s){return s.trim()}).filter(function(s){return s&&s.charAt(0)!=='#'});
+ if(!names.length){em.style.display='block';return}
+ names.forEach(add);
 }).catch(function(){em.style.display='block'});
 </script>
 </body></html>
