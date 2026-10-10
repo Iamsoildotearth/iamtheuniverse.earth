@@ -83,11 +83,22 @@ section p.label,header p.label{font:bold 11px/1 Arial,Helvetica,sans-serif;lette
 .vision h2,.vision blockquote,.vision p{text-align:center;margin-left:auto;margin-right:auto}
 .vision h2{margin-bottom:18px}
 .vision blockquote{padding:0}
+nav .brand{margin-left:0;font-weight:bold;font-size:13px}
+nav .links a{white-space:nowrap}
+@media(max-width:720px){
+nav .w{height:auto;padding:4px 8px}
+nav .brand{display:none}
+nav .links{display:flex;justify-content:space-between;width:100%}
+nav .links a{margin:0;padding:13px 7px;font-size:13px}
+}
+@media(max-width:359px){
+nav .links a{padding:13px 4px;font-size:12px}
+}
 </style>
 <script>function chk(){var s=document.querySelector('.strip');if(s&&!s.children.length)s.parentNode.parentNode.style.display='none'}</script>
 </head>
 <body>
-<nav><div class="w"><b>I Am the Universe</b><div><a href="#about">About</a><a href="#stories">I Am Soil Stories</a><a href="gallery.html">Global Gallery</a><a href="#connect">Connect</a></div></div></nav>
+<nav><div class="w"><a class="brand" href="index.html">I Am the Universe</a><div class="links"><a href="#about">About</a><a href="#stories">I Am Soil Stories</a><a href="gallery.html">Gallery</a><a href="#connect">Connect</a></div></div></nav>
 
 <header class="banner"><img src="images/banner.jpg" alt="I Am the Universe: all is one, one is all. Connecting people with the living world. A spiral galaxy, the Earth and a cross-section of living soil with roots, mushrooms and a worm."></header>
 <section class="lead"><div class="w">
