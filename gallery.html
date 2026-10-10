@@ -80,10 +80,21 @@ footer i{display:block;margin-top:14px;opacity:.7}
 .rdi h3{font-weight:normal;font-size:26px;margin:0 0 14px}
 .rdi div{white-space:pre-wrap;font-size:17px;line-height:1.7}
 .rdi .x{display:inline-block;margin-top:20px;background:var(--gold);padding:10px 22px;border-radius:30px;font:bold 13px Arial,sans-serif;cursor:pointer}
+nav .brand{margin-left:0;font-weight:bold;font-size:13px}
+nav .links a{white-space:nowrap}
+@media(max-width:720px){
+nav .w{height:auto;padding:4px 8px}
+nav .brand{display:none}
+nav .links{display:flex;justify-content:space-between;width:100%}
+nav .links a{margin:0;padding:13px 7px;font-size:13px}
+}
+@media(max-width:359px){
+nav .links a{padding:13px 4px;font-size:12px}
+}
 </style>
 </head>
 <body>
-<nav><div class="w"><b>I Am the Universe</b><div><a href="index.html#about">About</a><a href="index.html#stories">I Am Soil Stories</a><a href="gallery.html">Global Gallery</a><a href="index.html#connect">Connect</a></div></div></nav>
+<nav><div class="w"><a class="brand" href="index.html">I Am the Universe</a><div class="links"><a href="index.html#about">About</a><a href="index.html#stories">I Am Soil Stories</a><a href="gallery.html">Gallery</a><a href="index.html#connect">Connect</a></div></div></nav>
 <header class="top"><div class="w">
 <p class="label">I Am Soil Stories</p>
 <h1 style="font-size:clamp(36px,8vw,56px)">The Global Gallery</h1>
