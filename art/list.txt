@@ -2,7 +2,6 @@
 # Lines starting with # are ignored. Pictures, songs (.mp3) and writing (.txt) all go in this list.
 40-I-Am-Soil-Song-by-Lenny-England.mp3
 I-Am-Soil-by-Adam,-England.jpg
-I-Am-Soil-by-Anon, England.jpeg
 I-Am-Soil-by-Belinda,-England.jpg
 I-Am-Soil-by-Belinda.jpg
 I-Am-Soil-by-Calvin, Scotland.jpg
@@ -12,5 +11,6 @@ I-Am-Soil-by-Lisl,-Germany.jpg
 I-Am-Soil-by-Mary,-England.jpg
 I-Am-Soil-by-Neema,-England.jpg
 I-Am-Soil-by-Nirma,-England.jpg
+I-Am-Soil-by-Sasha,-England.jpg
 I-Am-Soil-by-Simone,-London-England.jpg
 
