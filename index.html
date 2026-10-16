@@ -1,6 +1,7 @@
 
 
 
+
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
@@ -24,7 +25,7 @@
 html{scroll-behavior:smooth}
 body{margin:0;font-family:Georgia,'Times New Roman',serif;color:var(--ink);background:var(--cream);line-height:1.6}
 .w{max-width:940px;margin:0 auto;padding:0 24px}
-.label{font:bold 11px/1 Arial,Helvetica,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8a6a1f;margin:0 0 14px}
+.label{font:bold 11px/1 Arial,Helvetica,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#6b4f0e;margin:0 0 14px}
 .story .label,.top .label{color:var(--gold)}
 h1,h2{font-weight:normal;line-height:1.1;margin:0 0 18px}
 h2{font-size:clamp(30px,5vw,42px)}
@@ -74,11 +75,11 @@ footer i{display:block;margin-top:14px;opacity:.7}
 .emb img{width:100%;border-radius:50%;box-shadow:0 14px 30px rgba(0,0,0,.4);display:block}
 .emb p{font-size:17px;margin:16px 0 0;color:#fff}
 .work{padding:56px 0;border-bottom:1px solid var(--beige)}
-.facts{font:bold 14px Arial,Helvetica,sans-serif;color:#8a6a1f;margin:6px 0 0}
+.facts{font:bold 14px Arial,Helvetica,sans-serif;color:#6b4f0e;margin:6px 0 0}
 .em{font:14px Arial,Helvetica,sans-serif;margin-top:18px}
 .em a{color:var(--ink)}
 /* label fix: stop section paragraph rules from resizing the small headings */
-section p.label,header p.label{font:bold 11px/1 Arial,Helvetica,sans-serif;letter-spacing:.16em;margin:0 0 14px;max-width:none;color:#8a6a1f}
+section p.label,header p.label{font:bold 11px/1 Arial,Helvetica,sans-serif;letter-spacing:.16em;margin:0 0 14px;max-width:none;color:#6b4f0e}
 .story p.label,.top p.label{color:var(--gold)}
 .vision p.label,.connect p.label,.top p.label{text-indent:.16em}
 .vision .w{text-align:center}
@@ -103,6 +104,16 @@ a:focus-visible,.btn:focus-visible,figure:focus-visible{outline:3px solid #c9a24
 .faq details{background:#fffdf7;border-top:3px solid var(--gold);padding:14px 18px;margin-bottom:10px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
 .faq summary{cursor:pointer;font:bold 15px Arial,Helvetica,sans-serif}
 .faq p{margin:10px 0 0;font-size:15px}
+.team img{width:100%;height:auto;aspect-ratio:1;object-fit:cover;border-radius:6px;margin-bottom:12px;display:block}
+.team p{margin:0 0 8px}
+.team .creds{font-size:13px;border-top:1px solid var(--beige);padding-top:10px;margin-top:12px}
+.card .d{font:bold 12px Arial,Helvetica,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#6b4f0e;margin:0 0 6px}
+.card .more{display:inline-block;margin-top:8px;font:bold 13px Arial,sans-serif}
+.morenews{margin-top:18px}
+.morenews summary{cursor:pointer;font:bold 15px Arial,Helvetica,sans-serif;color:#6b4f0e;padding:6px 0}
+.morenews .cards{margin-top:16px}
+.sub2{font-size:15px;margin:0 0 14px}
+@media(max-width:720px){nav .links{flex-wrap:wrap;justify-content:center}nav .links a{padding:13px 9px}}
 </style>
 <script>function chk(){var s=document.querySelector('.strip');if(s&&!s.children.length)s.parentNode.parentNode.style.display='none'}</script>
 <meta name="theme-color" content="#223a2c">
@@ -110,9 +121,9 @@ a:focus-visible,.btn:focus-visible,figure:focus-visible{outline:3px solid #c9a24
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<nav aria-label="Main"><div class="w"><a class="brand" href="index.html">I Am the Universe</a><div class="links"><a href="#about">About</a><a href="#stories">I Am Soil Stories</a><a href="gallery.html">Gallery</a><a href="#connect">Connect</a></div></div></nav>
+<nav aria-label="Main"><div class="w"><a class="brand" href="index.html">I Am the Universe</a><div class="links"><a href="#about">About</a><a href="#stories">I Am Soil Stories</a><a href="gallery.html">Gallery</a><a href="green-social-prescribing.html">Growing</a><a href="#connect">Connect</a></div></div></nav>
 
-<header class="banner"><img width="1500" height="500" fetchpriority="high" src="images/banner.jpg" alt="I Am the Universe: all is one, one is all. Connecting people with the living world. A spiral galaxy, the Earth and a cross-section of living soil with roots, mushrooms and a worm."></header>
+<header class="banner"><img width="1500" height="500" fetchpriority="high" srcset="images/banner-750.jpg 750w, images/banner.jpg 1500w" sizes="100vw" src="images/banner.jpg" alt="I Am the Universe: all is one, one is all. Connecting people with the living world. A spiral galaxy, the Earth and a cross-section of living soil with roots, mushrooms and a worm."></header>
 <main id="main">
 <section class="lead"><div class="w">
 <h1>I Am the Universe Experience</h1>
@@ -129,7 +140,7 @@ a:focus-visible,.btn:focus-visible,figure:focus-visible{outline:3px solid #c9a24
 <div class="card"><h3>Connection</h3><p>We create opportunities for people to explore their relationship with soil, nature and one another through shared experiences and storytelling.</p></div>
 </div></div></section>
 
-<section class="photos"><div class="w"><div class="strip"><figure><img src="images/home-1.jpg" alt="A handful of dark, crumbly healthy soil held in an open hand" loading="lazy" onerror="this.parentNode.remove();chk()"></figure><figure><img src="images/home-2.jpg" alt="I Am the Universe community photo" loading="lazy" onerror="this.parentNode.remove();chk()"></figure><figure><img src="images/home-3.jpg" alt="A group of people sitting together in a grassy circle on a farm" loading="lazy" onerror="this.parentNode.remove();chk()"></figure></div></div></section>
+<section class="photos"><div class="w"><div class="strip"><figure><img src="images/home-1.jpg" width="640" height="480" alt="A handful of dark, crumbly healthy soil held in an open hand" loading="lazy" onerror="this.parentNode.remove();chk()"></figure><figure><img src="images/home-2.jpg" width="1000" height="750" alt="Volunteers chatting on a community farm beside hundreds of colourful squashes laid out after the harvest" loading="lazy" onerror="this.parentNode.remove();chk()"></figure><figure><img src="images/home-3.jpg" width="640" height="480" alt="A group of people sitting together in a grassy circle on a farm" loading="lazy" onerror="this.parentNode.remove();chk()"></figure></div></div></section>
 
 <section class="story" id="stories"><div class="w">
 <div>
@@ -140,7 +151,7 @@ a:focus-visible,.btn:focus-visible,figure:focus-visible{outline:3px solid #c9a24
 <p>The experience combines creativity with accessible soil education, opening conversations about soil, food, nature and human wellbeing.</p>
 <p><a class="btn" href="gallery.html">Visit the Global Gallery</a></p>
 </div>
-<div class="emb"><img src="images/logo.png" alt="I Am the Universe emblem: the Earth held within a tree with roots and a golden spiral"><p>From the Earth through creativity back to connection</p></div>
+<div class="emb"><img src="images/logo.webp" width="300" height="300" alt="I Am the Universe emblem: the Earth held within a tree with roots and a golden spiral"><p>From the Earth through creativity back to connection</p></div>
 </div></section>
 
 <section class="work" id="workshops"><div class="w">
@@ -176,7 +187,7 @@ a:focus-visible,.btn:focus-visible,figure:focus-visible{outline:3px solid #c9a24
 <h2>People care about what they feel connected to</h2>
 <p>After many years of teaching about why we shouldn't cut down Amazonian rainforests, volunteering in marine conservation and working with regenerative growers, it's clear that we need something more effective than the methods that have been tried.</p>
 <p>People can hear about how our food has lost much of the nutrients over the past 50 to 100 years and still shrug. They hear about how rainforests are still being cut down and that the plastic pollution in the oceans has now even been found in our blood. The facts reach the head, but not the heart.</p>
-</p>I've seen how much more effectively learning takes place when we use experiential methods and a story, than a fact sheet.</p>
+<p>I've seen how much more effectively learning takes place when we use experiential methods and a story, than a fact sheet.</p>
 <p>So we built a methodology and a workshop that works the other way round. Feel first. Learn second. People step into the world of soil, water, air and light, make something of their own and then meet the science with their hands in real earth. Nobody has to be an expert.</p>
 <p>It is a methodology built for behaviour change, because people look after what they feel a part of.</p>
 <p>It's free. It runs in community venues and can come to you online. Everything people make can be shared in the Global Gallery.</p>
@@ -192,15 +203,12 @@ a:focus-visible,.btn:focus-visible,figure:focus-visible{outline:3px solid #c9a24
 
 <section class="work" id="news"><div class="w">
 <p class="label">News</p>
-<h2>What we've been up to</h2>
-<div class="cards">
-<div class="card"><h3>April 2025</h3><p>Meeting with MP in the UK House of Parliament to ask for support for a Soil Health Monitoring pilot scheme.</p></div>
-<div class="card"><h3>May 2025</h3><p>Started providing volunteer support for Green Social Prescribing groups on two farms, in liaison with University of Bristol and the Sustainable Food Trust.</p></div>
-<div class="card"><h3>March 2026</h3><p>Our first I Am Soil Stories workshop took place in Kathmandhu, Nepal.</p></div>
-<div class="card"><h3>June 2026</h3><p>Participated in the Bristol Festival of Nature with a stall at The Hub in Lockleaze.</p></div>
-<div class="card"><h3>July & August 2026</h3><p>Visits to local community farms to establish partnerships and extend farm network. </p></div>
-<div class="card"><h3>September 2026</h3><p>Met with representatives of South Gloucestershire Council and related organisations, to explore collaborations and plan a World Soil Day event.</p></div>
-</div>
+<h2>What's coming up and what we've been up to</h2>
+<div id="upcoming" class="cards"></div>
+<h3 style="font-weight:normal;font-size:22px;margin:34px 0 14px">Recent news</h3>
+<div id="newslist" class="cards"></div>
+<details class="morenews" id="morenews" style="display:none"><summary id="moresum">Earlier news</summary><div id="moreitems" class="cards"></div></details>
+<noscript><p>Please turn on JavaScript to see our latest news.</p></noscript>
 </div></section>
 
 <section class="work" id="research"><div class="w">
@@ -216,24 +224,24 @@ a:focus-visible,.btn:focus-visible,figure:focus-visible{outline:3px solid #c9a24
 <p style="margin-top:22px"><a class="btn" href="mailto:cheryl@iamtheuniverse.earth?subject=Partnership%20enquiry">Talk to us about partnering</a></p>
 </div></section>
 
-<!-- PARTICIPANT REFLECTIONS: 
+<section class="work" id="reflections"><div class="w">
 <p class="label">Reflections</p>
 <h2>Words from participants</h2>
 <div class="cards">
-<div class="card"><p>&ldquo;I've studied soil science, but this is a more holistic way of experiencing it.&rdquo;</p><p style="margin-top:10px"><b>Suzy</b></p></div>
-<div class="card"><p>&ldquo;I loved being there and wanted to stay there for a lot longer.&rdquo;</p><p style="margin-top:10px"><b>Sousan</b></p></div>
+<div class="card"><p>&ldquo;I've studied soil science for many years, but this is a more holistic approach.&rdquo;</p><p style="margin-top:10px"><b>Sally</b></p></div>
+<div class="card"><p>&ldquo;I love being there in the soil. I wanted to stay there longer. It was beautiful.&rdquo;</p><p style="margin-top:10px"><b>Sousan</b></p></div>
 </div></div></section>
-END OF PARTICIPANT REFLECTIONS -->
 
 <section class="work" id="who-we-are"><div class="w">
 <p class="label">Who we are</p>
 <h2>A team of volunteers</h2>
 <p>Everyone involved in I Am Soil Stories is a volunteer. We do this because we are driven by a passion to secure the future of our Earth for future generations.</p>
-<div class="card" style="margin:26px 0"><h3>Cheryl Butterworth, Founder and Director</h3><p>Former teacher and teacher trainer with a BA (Hons) and a PGCE. Led a school RE and Philosophy department for 16 years and was an Associate Tutor on the University of Bristol PGCE. Won the prestigious Farmington Award for Outstanding Department, Farmington Institute, Manchester College, Oxford (2001). Co-wrote a successful European funding bid for a soil project. Holds PADI and BSAC scuba instructor qualifications and has worked in marine conservation.</p></div>
-<!-- FACILITATOR PROFILES: add one card per person once they have given a photo, their words and permission.
-     Copy this card for each person (Nirma, Neema, Chantal, Simone, Belinda, Sarah), put the photo in the images folder and change the names.
-<div class="card"><img src="images/team/NAME.jpg" alt="NAME, workshop facilitator" style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:6px;margin-bottom:12px"><h3>NAME</h3><p><b>Workshop facilitator</b></p><p style="margin-top:8px">Why I volunteer: ...</p></div>
--->
+<div class="cards" style="margin:26px 0">
+<div class="card team"><img src="images/team-cheryl.jpg" width="600" height="600" loading="lazy" alt="Cheryl Butterworth smiling on a windswept beach"><h3>Cheryl Butterworth</h3><p><b>Founder and Director</b></p><p>Why I volunteer: I've taught, dived, dug and volunteered my way round the world, and one thing never changes: people look after what they feel connected to. These workshops give people that moment, with real soil in their hands. I do it so the Earth we hand on is still alive for those who come after us.</p><p class="creds">Former teacher and teacher trainer with a BA (Hons) and a PGCE. Led a school RE and Philosophy department for 16 years and was an Associate Tutor on the University of Bristol PGCE. Won the prestigious Farmington Award for Outstanding Department, Farmington Institute, Manchester College, Oxford (2001). Co-wrote a successful European funding bid for a soil project. Holds PADI and BSAC scuba instructor qualifications and has worked in marine conservation.</p></div>
+<div class="card team"><img src="images/team-neema.jpg" width="600" height="600" loading="lazy" alt="Neema, workshop facilitator, smiling in front of a turquoise mountain lake"><h3>Neema</h3><p><b>Workshop facilitator</b></p><p>Why I volunteer: For me, it's about more than growing food. It's about creating a space where people feel welcome, supported, and a little more connected to nature and to each other. Being part of that, even for a short time each week, is genuinely rewarding.</p></div>
+</div>
+<!-- MORE FACILITATOR PROFILES: add one card per person once they have given a photo, their words and permission (Nirma, Chantal, Simone, Belinda, Sarah).
+     Copy a card above into the cards box, upload their photo as images/team-NAME.jpg and change the name and words. -->
 <div class="cards">
 <div class="card" id="join-us"><h3>Become a facilitator</h3><p>We are always looking for warm, reliable volunteers who love the Earth and enjoy working with people. You don't need to be a soil expert and all the training is free. Tell us a little about yourself and where you are based and we'll take it from there.</p><p style="margin-top:14px"><a class="btn" href="mailto:cheryl@iamtheuniverse.earth?subject=Facilitator%20enquiry">Volunteer with us</a></p></div>
 <div class="card" id="support-us"><h3>Support our work</h3><p>Because we are all volunteers, donations help us keep the workshops free. To donate or sponsor a workshop, get in touch.</p><p style="margin-top:14px"><a class="btn" href="mailto:cheryl@iamtheuniverse.earth?subject=Supporting%20I%20Am%20Soil%20Stories">Support us</a></p></div>
@@ -258,5 +266,32 @@ Connecting people, soil, nature and the living Earth.<br><br>
 I Am the Universe Experience CIC is a Community Interest Company registered in England and Wales, company number 17394034.
 <br><br>Privacy: we only publish names and artwork with permission and use first names only. For anyone under 18 we need a parent or guardian to agree. If you wish to remove anything please email <a href="mailto:cheryl@iamtheuniverse.earth">cheryl@iamtheuniverse.earth</a>. Read our <a href="privacy.html">privacy notice</a>.<i>© Cheryl Butterworth 2026. All rights reserved.</i>
 </div></footer>
+<script>
+(function(){
+var M=['January','February','March','April','May','June','July','August','September','October','November','December'];
+function pd(t){var p=t.split('-');return new Date(+p[0],(+p[1]||1)-1,+p[2]||1)}
+function lab(d,l){if(l)return l;var p=d.split('-');return p[2]?(+p[2])+' '+M[p[1]-1]+' '+p[0]:M[p[1]-1]+' '+p[0]}
+function card(i){var c=document.createElement('div');c.className='card';
+ if(i.img){var im=document.createElement('img');im.src=i.img;im.alt='';im.loading='lazy';im.style.cssText='width:100%;height:auto;border-radius:6px;margin-bottom:10px;display:block';c.appendChild(im)}
+ var d=document.createElement('p');d.className='d';d.textContent=lab(i.date,i.label);c.appendChild(d);
+ var p=document.createElement('p');p.textContent=i.text;c.appendChild(p);
+ if(i.link){var a=document.createElement('a');a.href=i.link;a.className='more';a.textContent='Find out more';c.appendChild(a)}
+ return c}
+function interest(){var c=document.createElement('div');c.className='card';
+ c.innerHTML='<p class="d">Dates to be confirmed</p><p><b>Online workshop.</b> A few people have asked to join an online I Am Soil Stories workshop. Tell us you are interested and we will let you know as soon as a date is fixed.</p><p style="margin-top:12px"><a class="btn" href="mailto:workshops@iamtheuniverse.earth?subject=Online%20workshop%20interest">Join the list</a></p>';return c}
+fetch('updates.txt',{cache:'no-cache'}).then(function(r){return r.ok?r.text():''}).then(function(t){
+ var items=[];t.split(/\r?\n/).forEach(function(l){l=l.trim();if(!l||l.charAt(0)==='#')return;var f=l.split('|').map(function(x){return x.trim()});if(f.length<3)return;
+  var dd=f[0].split(/\s+/);var date=dd.shift(),label=dd.join(' ');items.push({date:date,label:label,type:f[1].toLowerCase(),text:f[2],link:f[3]||'',img:f[4]||''})});
+ var now=new Date();now.setHours(0,0,0,0);
+ function end(i){var p=i.date.split('-');return p[2]?pd(i.date):new Date(+p[0],+p[1],1)}
+ var up=items.filter(function(i){return i.type==='event'&&end(i)>=now}).sort(function(a,b){return pd(a.date)-pd(b.date)});
+ var past=items.filter(function(i){return up.indexOf(i)<0}).sort(function(a,b){return pd(b.date)-pd(a.date)});
+ var u=document.getElementById('upcoming');up.forEach(function(i){u.appendChild(card(i))});u.appendChild(interest());
+ var nl=document.getElementById('newslist'),mi=document.getElementById('moreitems');
+ past.forEach(function(i,n){(n<3?nl:mi).appendChild(card(i))});
+ if(past.length>3){document.getElementById('morenews').style.display='block';document.getElementById('moresum').textContent='Earlier news ('+(past.length-3)+')'}
+}).catch(function(){});
+})();
+</script>
 </body>
 </html>
