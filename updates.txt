@@ -1,0 +1,13 @@
+# NEWS AND EVENTS LIST. One line per item, newest or oldest in any order.
+# Format:  date | type | text | optional link | optional image
+#   date  = 2026-12-05 (a day) or 2026-12 (a month). You can add your own label after a space, e.g. 2026-08 July & August 2026
+#   type  = event (shows under 'Coming up' until its date has passed, then moves to news by itself) or news
+#   image = a file you have uploaded to the images folder, e.g. images/news-castro.jpg (only with permission from the people shown)
+# Lines starting with # are ignored. The three newest news items show; the rest go into 'Earlier news'.
+2025-04 | news | Meeting with MP in the UK House of Parliament to ask for support for a Soil Health Monitoring pilot scheme.
+2025-05 | news | Started providing volunteer support for Green Social Prescribing groups on two farms, in liaison with University of Bristol and the Sustainable Food Trust.
+2026-03 | news | Our first I Am Soil Stories workshop took place in Kathmandu, Nepal.
+2026-06 | news | Participated in the Bristol Festival of Nature with a stall at The Hub in Lockleaze.
+2026-08 July & August 2026 | news | Visits to local community farms to establish partnerships and extend farm network.
+2026-08-11 August 2026 | news | I Am The Universe Experience CIC was registered as a Community Interest Company.
+2026-09 | news | Met with representatives of South Gloucestershire Council and related organisations, to explore collaborations and plan a World Soil Day event.
