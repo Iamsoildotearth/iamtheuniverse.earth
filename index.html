@@ -2,6 +2,7 @@
 
 
 
+
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
@@ -66,7 +67,8 @@ footer i{display:block;margin-top:14px;opacity:.7}
 .photos{padding:0 0 56px}
 .strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
 .strip figure{margin:0}
-.strip img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;border-radius:6px}
+/* HOME PHOTOS ARE SQUARE: please leave the next line exactly as it is */
+.strip img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;display:block;border-radius:6px}
 .banner img{width:100%;height:auto;display:block}
 .lead{background:#000;color:#fff;text-align:center;padding:40px 0 48px}
 .lead h1{font-size:clamp(28px,6vw,40px);margin:0 0 12px}
@@ -146,7 +148,7 @@ a:focus-visible,.btn:focus-visible,figure:focus-visible{outline:3px solid #c9a24
 <div class="card"><h3>Connection</h3><p>We create opportunities for people to explore their relationship with soil, nature and one another through shared experiences and storytelling.</p></div>
 </div></div></section>
 
-<section class="photos"><div class="w"><div class="strip"><figure><img src="images/home-1.jpg" width="640" height="480" alt="A handful of dark, crumbly healthy soil held in an open hand" loading="lazy" onerror="this.parentNode.remove();chk()"></figure><figure><img src="images/home-2.jpg" width="640" height="561" alt="Art work made from soil and petals in the shape of a heart" loading="lazy" onerror="this.parentNode.remove();chk()"></figure><figure><img src="images/home-3.jpg" width="640" height="480" alt="A group of people sitting together in a grassy circle on a farm" loading="lazy" onerror="this.parentNode.remove();chk()"></figure></div></div></section>
+<section class="photos"><div class="w"><div class="strip"><figure><img src="images/home-1.jpg" width="480" height="480" alt="A handful of dark, crumbly healthy soil held in an open hand" loading="lazy" onerror="this.parentNode.remove();chk()"></figure><figure><img src="images/home-2.jpg" width="480" height="480" alt="Art work made from soil and petals in the shape of a heart" loading="lazy" onerror="this.parentNode.remove();chk()"></figure><figure><img src="images/home-3.jpg" width="480" height="480" alt="A group of people sitting together in a grassy circle on a farm" loading="lazy" onerror="this.parentNode.remove();chk()"></figure></div></div></section>
 
 <section class="story" id="stories"><div class="w">
 <div>
@@ -180,7 +182,7 @@ a:focus-visible,.btn:focus-visible,figure:focus-visible{outline:3px solid #c9a24
 <details><summary>Is it really free?</summary><p>Yes. Everyone who runs the workshops is a volunteer.</p></details>
 <details><summary>Do I need any experience or knowledge?</summary><p>No. No previous knowledge or experience is needed.</p></details>
 <details><summary>How long does it take?</summary><p>About 1 hour, but we can offer more fascinating activities and experiments to extend the fun and learning.</p></details>
-<details><summary>Can schools and groups book?</summary><p>Yes. Schools, community groups, farms and workplaces are all welcome, and it is free for everyone. Email <a href="mailto:workshops@iamtheuniverse.earth">workshops@iamtheuniverse.earth</a> and we'll find a date that suits you.</p></details>
+<details><summary>Can schools and groups book?</summary><p>Yes. Schools, community groups, farms and workplaces are all welcome and it is free for everyone. Email <a href="mailto:workshops@iamtheuniverse.earth">workshops@iamtheuniverse.earth</a> and we'll find a date that suits you.</p></details>
 <details><summary>What should I wear or bring?</summary><p>Nothing special. If we are outdoors, dress for the weather.</p></details>
 <details><summary>Can I join online?</summary><p>Yes. Many of our sessions run online.</p></details>
 <details><summary>Is the venue accessible?</summary><p>We aim to use accessible venues, but can't always promise step-free access. Tell us what you need and we'll do our best.</p></details>
@@ -222,7 +224,7 @@ a:focus-visible,.btn:focus-visible,figure:focus-visible{outline:3px solid #c9a24
 <section class="work" id="research"><div class="w">
 <p class="label">Research and partnerships</p>
 <h2>Working with researchers and funders</h2>
-<p>We are developing a creative public engagement and citizen science framework for EU Mission Soil Living Labs, called CULTIVATE, and we are looking for partners. The details, our credentials and the evidence behind our approach are on their own page.</p>
+<p>We are developing a creative public engagement and citizen science framework, called CULTIVATE, for EU Mission Soil Living Labs and we are looking for partners. The details, our credentials and the evidence behind our approach are on their own page.</p>
 <p style="margin-top:22px"><a class="btn" href="partnerships.html">Research and partnerships</a></p>
 </div></section>
 
@@ -240,7 +242,7 @@ a:focus-visible,.btn:focus-visible,figure:focus-visible{outline:3px solid #c9a24
 <p>Everyone involved in I Am Soil Stories is a volunteer. We do this because we are driven by a passion to secure the future of our Earth for future generations.</p>
 <div class="team-grid">
 <div class="card team wide"><img src="images/team-cheryl.jpg" width="600" height="600" loading="lazy" alt="Cheryl Butterworth smiling on a windswept beach"><h3>Cheryl Butterworth</h3><p><b>Founder and Director</b></p><p>Why I volunteer: I've taught, dived, dug and volunteered my way round the world and I've discovered that one thing is the same everywhere: people look after what they feel connected to. These workshops give people that moment, with real soil in their hands. I do it so the Earth we hand on is still alive for those who come after us.</p><p class="creds">Former teacher and teacher trainer with a BA (Hons) and a PGCE. Led a school RE and Philosophy department for 16 years and was an Associate Tutor on the University of Bristol PGCE. Won the prestigious Farmington Award for Outstanding Department, Farmington Institute, Manchester College, Oxford University. Co-authored a successful European funding bid for a soil project. Certified PADI and BSAC scuba instructor and has worked in marine conservation.</p></div>
-<div class="card team"><img src="images/team-neema.jpg" width="600" height="600" loading="lazy" alt="Neema, workshop facilitator, smiling in front of a turquoise mountain lake"><h3>Neema</h3><p><b>Workshop facilitator</b></p><p>Why I volunteer: For me, it's about more than growing food. It's about creating a space where people feel welcome, supported, and a little more connected to nature and to each other. Being part of that, even for a short time each week, is genuinely rewarding.</p></div>
+<div class="card team"><img src="images/team-neema.jpg" width="600" height="600" loading="lazy" alt="Neema, workshop facilitator, smiling in front of a turquoise mountain lake"><h3>Neema</h3><p><b>Workshop facilitator</b></p><p>Why I volunteer: For me, it's about more than growing food. It's about creating a space where people feel welcome, supported and a little more connected to nature and to each other. Being part of that, even for a short time each week, is genuinely rewarding.</p></div>
 </div>
 <!-- MORE FACILITATOR PROFILES: add one card per person once they have given a photo, their words and permission (Nirma, Chantal, Simone, Belinda, Sarah).
      Copy a card above into the cards box, upload their photo as images/team-NAME.jpg and change the name and words. -->
@@ -269,7 +271,7 @@ a:focus-visible,.btn:focus-visible,figure:focus-visible{outline:3px solid #c9a24
 Connecting people, soil, nature and the living Earth.<br><br>
 <a href="https://iamtheuniverse.earth">iamtheuniverse.earth</a><br><a href="#who-we-are">Who we are</a> &nbsp;·&nbsp; <a href="#join-us">Volunteer</a> &nbsp;·&nbsp; <a href="#support-us">Support us</a><br>Follow us on X: <a href="https://x.com/IAmSoilStories">@IAmSoilStories</a> &nbsp;·&nbsp; Instagram: <a href="https://www.instagram.com/iamtheuniverse.earth/">@iamtheuniverse.earth</a><br>
 I Am the Universe Experience CIC is a Community Interest Company registered in England and Wales, company number 17394034.
-<br><br>Privacy: we only publish names and artwork with permission and use first names only. For anyone under 18 we need a parent or guardian to agree. If you wish to remove anything please email <a href="mailto:cheryl@iamtheuniverse.earth">cheryl@iamtheuniverse.earth</a>. Read our <a href="privacy.html">privacy notice</a>.<i>© Cheryl Butterworth 2026. All rights reserved.</i>
+<br><br>Privacy: we only publish names and artwork with permission and use first names only. For anyone under 18 we need a parent or guardian to agree. If you wish to remove anything please email <a href="mailto:cheryl@iamtheuniverse.earth">cheryl@iamtheuniverse.earth</a>. Read our <a href="privacy.html">privacy notice</a>.<br>0.08 g of CO₂ per view &nbsp;·&nbsp; Cleaner than 85% of pages tested &nbsp;·&nbsp; <a href="https://www.websitecarbon.com/website/iamtheuniverse-earth/">Our page report</a> &nbsp;·&nbsp; <a href="https://websitecarbon.com/">Website Carbon</a><i>© Cheryl Butterworth 2026. All rights reserved.</i>
 </div></footer>
 <script>
 (function(){
