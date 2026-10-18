@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
@@ -64,6 +65,14 @@ a:focus-visible,.btn:focus-visible{outline:3px solid #c9a24f;outline-offset:3px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 .card .d{font:bold 12px Arial,Helvetica,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#6b4f0e;margin:0 0 6px}
 @media(max-width:720px){nav .links{flex-wrap:wrap;justify-content:center}nav .links a{padding:13px 9px}}
+.who-wide{display:grid;grid-template-columns:150px 1fr;gap:22px;align-items:start;margin-top:26px}
+.who-wide img{width:150px;height:150px;border-radius:50%;object-fit:cover}
+.who-wide h3{margin-top:0}
+.who-wide p{margin:0 0 8px;font-size:14px}
+.cards.who-two{grid-template-columns:repeat(2,1fr);margin-top:18px}
+.who img{width:100%;height:170px;object-fit:cover;border-radius:6px;margin-bottom:12px;display:block}
+.who img.logo-img{object-fit:contain;background:#e6ddcb}
+@media(max-width:620px){.who-wide{grid-template-columns:1fr;text-align:center}.who-wide img{margin:0 auto}.cards.who-two{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -96,9 +105,9 @@ a:focus-visible,.btn:focus-visible{outline:3px solid #c9a24f;outline-offset:3px}
 <div>
 <p class="label">Our Framework</p>
 <h2>The Social Layer of Soil Science</h2>
-<p>Scientific data changes minds, but emotional connections shift habits. The EU Soil Mission estimates that 60 to 70% of soils in the European Union are unhealthy, and the Joint Research Centre's soil health dashboard put the figure at 61% in 2023 (<a href="https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/new-tool-maps-state-soil-health-across-europe-2023-03-13_en">source</a>).</p>
+<p>Scientific data changes minds, but emotional connections shift habits. The EU Soil Mission estimates that 60 to 70% of soils in the European Union are unhealthy and the Joint Research Centre's soil health dashboard put the figure at 61% in 2023 (<a href="https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/new-tool-maps-state-soil-health-across-europe-2023-03-13_en">source</a>).</p>
 <p>To reverse this trend, technical findings must reach community culture. <b>I Am Soil Stories</b> acts as a translation layer, with a standardised workshop methodology, a live <b>Global Gallery</b> for co-designed citizen output and a network of educators.</p>
-<p><b>Citizen science is part of the picture.</b> Our work began with a call for a local citizen science soil-health monitoring pilot, and engaging people in it remains central. Participants can add simple soil tests and biodiversity counts at green social prescribing sites, and we are developing school soil-testing projects and Citizen Science Clubs.</p>
+<p><b>Citizen science is part of the picture.</b> Our work began with a call for a local citizen science soil-health monitoring pilot and engaging people in it remains central. Participants can add simple soil tests and biodiversity counts at green social prescribing sites and we are developing school soil-testing projects and Citizen Science Clubs.</p>
 </div>
 <div>
 <svg viewBox="0 0 360 360" role="img" aria-labelledby="svgt" style="width:100%;max-width:360px;height:auto;display:block;margin:0 auto" xmlns="http://www.w3.org/2000/svg">
@@ -114,9 +123,10 @@ a:focus-visible,.btn:focus-visible{outline:3px solid #c9a24f;outline-offset:3px}
 <text x="180" y="168" font-size="12.5" fill="#e8eee9">Hands in real earth, then the science</text>
 <text x="180" y="236" font-size="21" font-weight="bold" fill="#fff">Respond</text>
 <text x="180" y="258" font-size="12.5" fill="#fff">Make, write, draw, move, share</text>
-<text x="180" y="327" font-size="21" font-weight="bold" fill="#1a1a1a">Feel</text>
+<text x="180" y="322" font-size="20" font-weight="bold" fill="#1a1a1a">Feel</text>
+<text x="180" y="340" font-size="13" font-weight="bold" fill="#1a1a1a">first</text>
 </g></svg>
-<p style="text-align:center;margin:18px auto 6px;font-size:16px;color:#fff;max-width:none"><b>Feel first.</b> <b>Respond second.</b> <b>Learn third.</b> <b>Change behaviour.</b></p>
+<p style="text-align:center;margin:18px auto 6px;font-size:16px;color:#fff;max-width:none"><b>Feel first.</b> Respond. Learn. Change behaviour.</p>
 <p style="text-align:center;margin:0 auto;font-size:13px;max-width:none">Connecting citizens to soil science through experience and connection.</p>
 </div>
 </div>
@@ -134,10 +144,10 @@ a:focus-visible,.btn:focus-visible{outline:3px solid #c9a24f;outline-offset:3px}
 <section class="work" id="credentials"><div class="w">
 <p class="label">Who you would work with</p>
 <h2>A volunteer team with education and funding experience</h2>
-<div class="cards">
-<div class="card" style="text-align:center"><img src="images/team-cheryl.jpg" width="600" height="600" loading="lazy" alt="Cheryl Butterworth smiling on a windswept beach" style="width:120px;height:120px;border-radius:50%;object-fit:cover;display:block;margin:0 auto 12px"><h3>Cheryl Butterworth</h3><p><b>Founder and Director</b></p><p style="margin-top:10px;text-align:left;font-size:13px">Former teacher and teacher trainer with a BA (Hons) and a PGCE. Led a school RE and Philosophy department for 16 years and was an Associate Tutor on the University of Bristol PGCE. Won the prestigious Farmington Award for Outstanding Department, Farmington Institute, Manchester College, Oxford University. Co-authored a successful European funding bid for a soil project. Certified PADI and BSAC scuba instructor and has worked in marine conservation.</p></div>
-<div class="card"><h3>Our facilitators</h3><p>A growing team of volunteer facilitators who run I Am Soil Stories workshops in person and online.</p></div>
-<div class="card"><h3>Our status</h3><p>A Community Interest Company registered in England and Wales (company number 17394034) and registered on the EU Funding &amp; Tenders Portal (<b>PIC 862664651</b>).</p></div>
+<div class="card who-wide"><img src="images/team-cheryl.jpg" width="600" height="600" loading="lazy" alt="Cheryl Butterworth smiling on a windswept beach"><div><h3>Cheryl Butterworth</h3><p><b>Founder and Director</b></p><p>Former teacher and teacher trainer with a BA (Hons) and a PGCE. Led a school RE and Philosophy department for 16 years and was an Associate Tutor on the University of Bristol PGCE. Won the prestigious Farmington Award for Outstanding Department, Farmington Institute, Manchester College, Oxford University. Co-authored a successful European funding bid for a soil project. Certified PADI and BSAC scuba instructor and has worked in marine conservation.</p></div></div>
+<div class="cards who-two">
+<div class="card who"><img src="images/home-3.jpg" width="480" height="480" loading="lazy" alt="A group of people sitting together in a grassy circle on a farm"><h3>Our facilitators</h3><p>A growing team of volunteer facilitators who run I Am Soil Stories workshops in person and online.</p></div>
+<div class="card who"><img class="logo-img" src="images/logo.webp" width="300" height="300" loading="lazy" alt="I Am the Universe emblem: the Earth held within a tree with roots and a golden spiral"><h3>Our status</h3><p>A Community Interest Company registered in England and Wales (company number 17394034) and registered on the EU Funding &amp; Tenders Portal (<b>PIC 862664651</b>).</p></div>
 </div>
 </div></section>
 
@@ -158,7 +168,7 @@ a:focus-visible,.btn:focus-visible{outline:3px solid #c9a24f;outline-offset:3px}
 <a href="index.html">Home</a> &nbsp;·&nbsp; <a href="gallery.html">Global Gallery</a> &nbsp;·&nbsp; <a href="privacy.html">Privacy notice</a><br>
 Follow us on X: <a href="https://x.com/IAmSoilStories">@IAmSoilStories</a> &nbsp;·&nbsp; Instagram: <a href="https://www.instagram.com/iamtheuniverse.earth/">@iamtheuniverse.earth</a><br>
 I Am the Universe Experience CIC is a Community Interest Company registered in England and Wales, company number 17394034.
-<i>&copy; Cheryl Butterworth 2026. All rights reserved. Our work supports the aims of the EU Mission 'A Soil Deal for Europe'.</i>
+<br>0.08 g of CO₂ per view &nbsp;·&nbsp; Cleaner than 85% of pages tested &nbsp;·&nbsp; <a href="https://www.websitecarbon.com/website/iamtheuniverse-earth/">Our page report</a> &nbsp;·&nbsp; <a href="https://websitecarbon.com/">Website Carbon</a><i>&copy; Cheryl Butterworth 2026. All rights reserved. Our work supports the aims of the EU Mission 'A Soil Deal for Europe'.</i>
 </div></footer>
 
 </body>
