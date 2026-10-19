@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Soil Stories Gallery | Living Artifacts</title>
+  <link rel="stylesheet" href="soil-stories-style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div style="text-align: center; padding: 2rem 0;">
+      <h1 class="text-glow" style="font-size: 2.5rem;">The Affective Soil Archive</h1>
+      <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">
+        Real proof of structural behavior shifts. Every piece of art, short-story, audio file, or song structure displayed below was created by everyday humans unlocking their relationship with the universe.
+      </p>
+    </div>
+
+    <!-- The Interactive Static Media Submission Pipe -->
+    <!-- Swap in your own email to instantly initialize FormSubmit updates -->
+    <div class="form-container" style="margin-bottom: 4rem; border-color: rgba(59, 255, 20, 0.2);">
+      <h3 style="margin-top: 0; color: var(--biolume-green);">Add Your Living Creation to the Grid</h3>
+      <form action="https://formsubmit.co" method="POST" enctype="multipart/form-data">
+        
+        <!-- Anti-Spam configuration -->
+        <input type="text" name="_honey" style="display:none">
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div class="form-group">
+            <label for="creator">Your Name / Alias</label>
+            <input type="text" name="creator_name" required placeholder="Anonymous Artist">
+          </div>
+          <div class="form-group">
+            <label for="file">Upload Media (Art, Audio, Text)</label>
+            <!-- Accepts regular photos, artwork scans, poems, or audio notes up to 10MB completely free -->
+            <input type="file" name="attachment" accept="image/*,audio/*,.pdf,.txt" required style="padding: 0.55rem;">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="story">The Meaning (How did the workshop shift your perspective?)</label>
+          <textarea name="art_meaning" rows="3" placeholder="Describe the feeling behind the creation..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary">Transmit Creation to Archive</button>
+      </form>
+    </div>
+
+    <!-- The Display Grid Matrix -->
+    <h2>The Current Collection</h2>
+    <div class="gallery-grid">
+      
+      <!-- Mock Entry 1 -->
+      <div class="gallery-card">
+        <div style="background: #253047; height: 180px; display: flex; align-items: center; justify-content: center; color: var(--earth-gold); font-weight: bold;">
+          [ Beautiful Uploaded Art Image ]
+        </div>
+        <div class="card-content">
+          <h4 style="margin: 0; color: var(--biolume-green);">"Bioluminescent Roots"</h4>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0.25rem 0;">By Sarah M. — Zoom Attendee</p>
+          <p style="font-size: 0.9rem; margin-top: 0.5rem; line-height: 1.4;">"I never considered that soil contains more living interactions than the Milky Way galaxy has stars. This drawing tracks that cosmic reflection."</p>
+        </div>
+      </div>
+
+      <!-- Mock Entry 2 -->
+      <div class="gallery-card">
+        <div style="background: #1E2538; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 1rem; box-sizing: border-box; text-align: center;">
+          <span style="font-size: 2rem; margin-bottom: 0.5rem;">🎵</span>
+          <span style="font-size: 0.8rem; color: var(--earth-gold);">Audio Track Submitted</span>
+        </div>
+        <div class="card-content">
+          <h4 style="margin: 0; color: var(--biolume-green);">"The Microscopic Disco Beats"</h4>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0.25rem 0;">By Dave L. — In-Person Cohort</p>
+          <p style="font-size: 0.9rem; margin-top: 0.5rem; line-height: 1.4;">An ambient electronic piece synthetically modeled from raw soil moisture tracking data gathered right outside our workspace window.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
