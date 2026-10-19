@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book I Am Soil Stories | Free Creative Workshop</title>
+  <link rel="stylesheet" href="soil-stories-style.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Hero Strategy Targeting Affective Domain -->
+    <div style="text-align: center; padding: 4rem 0 2rem 0;">
+      <span style="color: var(--earth-gold); text-transform: uppercase; font-weight: bold; letter-spacing: 0.1em;">Free Immersive Workshop</span>
+      <h1 style="font-size: 3rem; margin-top: 0.5rem;" class="text-glow">You are not just standing on dirt.<br>You are walking on a living universe.</h1>
+      <p style="font-size: 1.25rem; max-width: 700px; margin: 1.5rem auto; color: var(--text-muted);">
+        "I Am Soil Stories" is a 1-hour transformation space where we drop the dry academic facts, awaken our biological roots, and explore a personal relationship with the living earth through art, music, and writing.
+      </p>
+    </div>
+
+    <!-- Active Social Proof Metric Integration -->
+    <div style="text-align: center; margin-bottom: 2rem;">
+      <p style="font-style: italic; color: var(--earth-gold);">
+        🔥 Join 400+ artists, musicians, and earth-dwellers. Next sessions are open below:
+      </p>
+    </div>
+
+    <!-- Static Backend Pipeline Integration Form -->
+    <!-- Swap the 'YOUR_ENDPOINT_KEY' string out with your real Formspree endpoint -->
+    <div class="form-container" style="max-width: 600px; margin-left: auto; margin-right: auto;">
+      <h2 style="margin-top: 0; color: var(--clean-white);">Claim Your Free Space</h2>
+      
+      <form action="https://formspree.io" method="POST">
+        
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required placeholder="e.g. Tara Tardigrade">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required placeholder="cosmic@example.com">
+        </div>
+
+        <div class="form-group">
+          <label for="format">Preferred Workshop Format</label>
+          <select id="format" name="format" required>
+            <option value="" disabled selected>Select how you want to join...</option>
+            <option value="Online-Zoom">Global Online Interactive Session (Zoom)</option>
+            <option value="In-Person-Group">In-Person Community Group (Preferably local cohorts)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="affective-prompt">What is your current relationship with dirt? (One word or phrase)</label>
+          <input type="text" id="affective-prompt" name="relationship_status" placeholder="Mysterious, dirty, alive, ignored?">
+        </div>
+
+        <!-- Custom Static Redirection Route to Next Pipeline Step -->
+        <input type="hidden" name="_next" value="https://iamtheuniverse.earth">
+
+        <button type="submit" class="btn-primary" style="width: 100%; margin-top: 1rem;">Book My Soil Session</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
